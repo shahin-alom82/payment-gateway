@@ -1,4 +1,4 @@
-import { side1, side2, side3 } from "../assets";
+import { side1, side3 } from "../assets";
 import Container from "./Container";
 
 const Features = () => {
@@ -26,7 +26,7 @@ const Features = () => {
                                     </div>
                               </div>
                               <div className="flex items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
-                                    <span className="bg-cyan-300/20 py-3 px-3 rounded-full"><img src={side2} alt="img" className="h-10 w-10" /></span>
+                                    <span className="bg-cyan-300/20 py-3 px-3 rounded-full"><img src={side3} alt="img" className="h-10 w-10" /></span>
                                     <div>
                                           <h1 className="text-xl font-medium">100% Secured</h1>
                                           <p className="mt-1">The best credit cards offer some tantalizing combinations <br /> of promotions and prizes</p>
