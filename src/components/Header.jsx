@@ -1,4 +1,5 @@
-import { IoLogoSkype, IoMdMenu } from "react-icons/io";
+import { IoLogoSkype } from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Container from "./Container";
 import { nav } from "./constants";
 import { Link } from 'react-scroll';
@@ -8,8 +9,8 @@ const Header = () => {
       const [menuOpen, setMenuOpen] = useState(false);
 
       return (
-            <div>
-                  <Container className="flex items-center justify-between border-b border-textColor py-6">
+            <div className="fixed z-50 top-0 w-full bg-gray-900">
+                  <Container className="flex items-center justify-between py-6">
                         {/* Logo Section */}
                         <div className="flex items-center gap-2">
                               <IoLogoSkype size={40} className="text-lightText" />
@@ -28,35 +29,39 @@ const Header = () => {
                                           to={item.path.toLowerCase()}
                                           className="text-white tracking-wide cursor-pointer"
                                     >
-                                          <span className="text-designColor mr-1">
-                                                {item.value}
-                                          </span>
-                                          <span className="tracking-wide">
-                                                {item.title}
-                                          </span>
+                                          <span className="text-designColor mr-1">{item.value}</span>
+                                          <span className="tracking-wide">{item.title}</span>
                                     </Link>
                               ))}
                         </div>
 
                         {/* Menu Toggle for Mobile */}
-                        <IoMdMenu
-                              size={30}
-                              className="text-lightText block md:hidden cursor-pointer"
-                              onClick={() => setMenuOpen(!menuOpen)}
-                        />
+                        {menuOpen ? (
+                              <IoMdClose
+                                    size={30}
+                                    className="text-lightText block md:hidden cursor-pointer"
+                                    onClick={() => setMenuOpen(false)}
+                              />
+                        ) : (
+                              <IoMdMenu
+                                    size={30}
+                                    className="text-lightText block md:hidden cursor-pointer"
+                                    onClick={() => setMenuOpen(true)}
+                              />
+                        )}
                   </Container>
 
                   {/* Mobile Menu */}
                   {menuOpen && (
-                        <div className="md:hidden bg-black text-white px-6 py-4">
+                        <div className="md:hidden bg-gray-900 text-white px-6 py-4">
                               {nav.map((item, index) => (
                                     <Link
                                           key={index}
                                           smooth={true}
                                           duration={700}
                                           to={item.path.toLowerCase()}
-                                          className="block py-2 text-designColor"
-                                          onClick={() => setMenuOpen(false)} // Close menu after clicking
+                                          className="block py-2 text-designColor text-sm"
+                                          onClick={() => setMenuOpen(false)}
                                     >
                                           {item.title}
                                     </Link>

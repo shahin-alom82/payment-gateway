@@ -5,8 +5,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Banner = () => {
       return (
-            <div className="lg:mt-16">
-                  <Container className="text-lightText flex flex-col lg:flex-row justify-between gap-10">
+            <div className="lg:py-32 py-16">
+                  <Container id={"/"} className="text-lightText flex flex-col lg:flex-row justify-between gap-10">
                         {/* Left Side Content */}
                         <div className="lg:mt-14 mt-10 flex-1">
                               <h1 className="flex items-center gap-2 lg:text-[16px] text-xs rounded-md bg-gray-900/50 py-2 px-3 tracking-wide  lg:w-[310px] w-[240px]">

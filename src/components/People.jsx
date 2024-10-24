@@ -50,7 +50,7 @@ const People = () => {
 
                         {/* Section Four Start */}
                         <div className="lg:py-20 py-16 ">
-                              <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+                              <div className="container mx-auto px-4 flex flex-col lg:flex-row lg:items-center justify-between">
                                     <div className="mb-8 lg:mb-0 lg:w-1/2">
                                           <h1 className="text-2xl lg:text-4xl font-semibold tracking-wide uppercase mb-4 lg:mb-6">
                                                 Let's try our service now
@@ -60,7 +60,7 @@ const People = () => {
                                           </p>
                                     </div>
                                     <div>
-                                          <button type="button" className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 transition duration-300">
+                                          <button type="button" className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
                                                 Get Started
                                           </button>
                                     </div>
