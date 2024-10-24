@@ -13,7 +13,7 @@ const Header = () => {
                         {/* Logo Section */}
                         <div className="flex items-center gap-2">
                               <IoLogoSkype size={40} className="text-lightText" />
-                              <h1 className="lg:text-2xl text-xl text-lightText uppercase">
+                              <h1 className="lg:text-2xl text-xl text-lightText uppercase font-semibold">
                                     Shahin <span className="text-textColor">Alom</span>
                               </h1>
                         </div>

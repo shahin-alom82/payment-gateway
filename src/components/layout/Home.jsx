@@ -1,6 +1,7 @@
 import Banner from "../Banner";
 import Client from "../Client";
 import Features from "../Features";
+import People from "../People";
 import Products from "../Products";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
                   <Features />
                   <Products />
                   <Client />
+                  <People />
             </div>
       );
 };
