@@ -1,4 +1,4 @@
-import { side1, side3 } from "../assets";
+import { side1 } from "../assets";
 import Container from "./Container";
 
 const Features = () => {
@@ -17,24 +17,24 @@ const Features = () => {
                               </button>
                         </div>
                         {/* Right site */}
-                        <div className="flex flex-col gap-4">
-                              <div className="flex items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
+                        <div className="flex flex-col gap-4 lg:mt-0 mt-10">
+                              <div className="flex flex-col lg:flex-row items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
                                     <span className="bg-cyan-300/20 py-3 px-3 rounded-full"><img src={side1} alt="img" className="h-10 w-10" /></span>
-                                    <div>
+                                    <div className="lg:text-start text-center">
                                           <h1 className="text-xl font-medium">Rewards</h1>
                                           <p className="mt-1">The best credit cards offer some tantalizing combinations <br /> of promotions and prizes</p>
                                     </div>
                               </div>
-                              <div className="flex items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
+                              <div className="flex flex-col lg:flex-row items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
                                     <span className="bg-cyan-300/20 py-3 px-3 rounded-full"><img src={side1} alt="img" className="h-10 w-10" /></span>
-                                    <div>
+                                    <div className="lg:text-start text-center">
                                           <h1 className="text-xl font-medium">100% Secured</h1>
                                           <p className="mt-1">The best credit cards offer some tantalizing combinations <br /> of promotions and prizes</p>
                                     </div>
                               </div>
-                              <div className="flex items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
+                              <div className="flex flex-col lg:flex-row items-center gap-4 hover:bg-gray-500 py-4 px-4 rounded-lg duration-300 cursor-pointer">
                                     <span className="bg-cyan-300/20 py-3 px-3 rounded-full"><img src={side1} alt="img" className="h-10 w-10" /></span>
-                                    <div>
+                                    <div className="lg:text-start text-center">
                                           <h1 className="text-xl font-medium">Balance Transfer</h1>
                                           <p className="mt-1">The best credit cards offer some tantalizing combinations <br /> of promotions and prizes</p>
                                     </div>
